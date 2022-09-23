@@ -10,6 +10,7 @@ echo "NAME _+_>${APP_NAME}"
 echo "1st ls"
 ls
 echo "end 1st ls end"
+#   cd /Users/CS012/Abdul/ReactNative/Practice/AwesomeProject/ios/demoApp
   cd ios/demoApp
   ls
 echo "2nd ls"
@@ -17,7 +18,13 @@ echo "2nd ls"
 #     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
 #     # ls
 # sed -i '' 's/<string>myName/<string>newName/' 'info.plist'
-sed -i '' 's/<key>CFBundleDisplayName</key><string>demoApp</string>abdul/' 'info.plist'
+ key=CFBundleDisplayName
+ newvalue=\"ABDUL\"
+ sed -i -e "s/${key} *\=.*\;/${key} = ${newvalue}\;/" Info.plist
+#  cd Info.plist
+ ls
+ echo "${}"
+# sed -i '' 's+<key>CFBundleDisplayName</key><string>demoApp</string>abdul+' 'info.plist'
     #  usr/libexec/PlistBuddy Set CFBundleDisplayName abdul Info.plist
     #  usr/libexec/PlistBuddy  "Set CFBundleDisplayName $APP_NAME" Info.plist
 
