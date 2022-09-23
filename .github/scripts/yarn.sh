@@ -23,7 +23,7 @@ cd ios
 ls
 
 echo "XCODE BUILD CLEAN PROCESS START ==>"
-xcodebuild clean
+# xcodebuild clean
 echo "<== XCODE BUILD CLEAN PROCESS END ==>"
 ls
 cd ..
