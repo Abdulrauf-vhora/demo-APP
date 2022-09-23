@@ -7,8 +7,10 @@ myversion=ABDUL
 # *** CHANGE DIRECTORY TO THE GLOBAL PATH ***
 echo ${PWD}
 echo "NAME _+_>${APP_NAME}"
+echo "1st ls"
 ls
-  cd ios/demoAPP
+  cd ios
+echo "2nd ls"
   ls
 # echo "\n aftedr ${PWD}"
 #     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
