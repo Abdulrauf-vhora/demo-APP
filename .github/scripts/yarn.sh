@@ -5,17 +5,28 @@ echo "Project clean ls"
 ls
 # PROJECT_PATH=$1
 # cd $PROJECT_PATH
-# # *** CLEARING OLD EXISITING BUILDS ***
+# *** CLEARING OLD EXISITING BUILDS ***
 
-# # watchman watch-del-all
-# rm -rf yarn.lock package-lock.json node_modules
-# rm -rf android/app/build
-# rm -rf ios/Pods 
-# rm ios/Podfile.lock 
-# rm -rf ~/Library/Developer/Xcode/DerivedData
-# cd "${PROJECT_PATH}/ios"
-# xcodebuild clean
-# cd $PROJECT_PATH
-# yarn && cd ios && pod update && cd ..
+# watchman watch-del-all
+echo "PROJECT CLEANUP PROCESS START ==>"
 
-# echo "Project old builds are cleaned"
+rm -rf yarn.lock package-lock.json node_modules
+rm -rf android/app/build
+rm -rf ios/Pods 
+rm ios/Podfile.lock 
+rm -rf ~/Library/Developer/Xcode/DerivedData
+echo "<== Project CLEANUP PROCESS END ==>"
+ls
+
+cd ios
+ls
+
+echo "XCODE BUILD CLEAN PROCESS START ==>"
+xcodebuild clean
+echo "<== XCODE BUILD CLEAN PROCESS END ==>"
+
+cd ..
+yarn && cd ios && pod update && cd ..
+
+echo "<== PROJECT CLEANUP PROCESS END"
+
