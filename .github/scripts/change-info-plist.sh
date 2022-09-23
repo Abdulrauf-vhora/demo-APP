@@ -8,12 +8,12 @@ myversion=ABDUL
 echo ${PWD}
 echo "NAME _+_>${APP_NAME}"
 ls
-  cd /ios/demoAPP
-  ls
-echo "\n aftedr ${PWD}"
-    echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
-    # ls
-     /usr/libexec/PlistBuddy -c "Set CFBundleDisplayName $APP_NAME" Info.plist
+#   cd /ios/demoAPP
+#   ls
+# echo "\n aftedr ${PWD}"
+#     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
+#     # ls
+#      /usr/libexec/PlistBuddy -c "Set CFBundleDisplayName $APP_NAME" Info.plist
 
     # sed -i "" -e 's+<key>CFBundleDisplayName.*</key>+<key>CFBundleDisplayName>'${APP_NAME}'</key>+g' Info.plist
     # sed -i "" -e 's+<string name="app_name">.*</string>+<string name="app_name">'${APP_NAME}'</string>+g' strings.xml
