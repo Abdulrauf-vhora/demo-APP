@@ -19,7 +19,7 @@ jobs:
       #   run: sh ./.github/scripts/test.sh
 
       - name: Change App name
-        run: sh ./.github/scripts/rename-app-name.sh
+        run: sh ./.github/scripts/rename-app-name.sh testApplication
       # - name: rename project
       #   run: sh ./.github/scripts/rename.sh onlineApp onlineApplication
 
