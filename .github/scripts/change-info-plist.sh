@@ -8,8 +8,8 @@ myversion=ABDUL
 echo ${PWD}
 echo "NAME _+_>${APP_NAME}"
 ls
-#   cd /ios/demoAPP
-#   ls
+  cd ios/demoAPP
+  ls
 # echo "\n aftedr ${PWD}"
 #     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
 #     # ls
