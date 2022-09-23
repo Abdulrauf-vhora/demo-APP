@@ -18,10 +18,13 @@ jobs:
       # - name: change in info.plist file 12
       #   run: sh ./.github/scripts/test.sh
 
-      - name: Change App name
-        run: sh ./.github/scripts/rename-app-name.sh testApplication
-      - name: Clean Project
-        run: sh ./.github/scripts/yarn.sh
+      - name: Change Splash Screen
+        run: sh ./.github/scripts/change-splash-screen.sh
+      # - name: Change App name
+      #   run: sh ./.github/scripts/rename-app-name.sh testApplication
+      # - name: Clean Project
+      #   run: sh ./.github/scripts/yarn.sh
+
       # - name: rename project
       #   run: sh ./.github/scripts/rename.sh onlineApp onlineApplication
 
