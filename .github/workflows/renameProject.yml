@@ -19,4 +19,4 @@ jobs:
       #   run: sh ./.github/scripts/test.sh
 
       - name: Change Splash Screen
-        run: sh ./.github/scripts/change-splash-screen.sh
+        run: sh ./.github/scripts/change-splash-screen.sh  /Users/CS012/Abdul/ReactNative/Practice/demoApp/assets/splash.jpg
