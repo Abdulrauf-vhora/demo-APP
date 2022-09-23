@@ -6,8 +6,10 @@ APP_NAME=$1
 myversion=ABDUL
 # *** CHANGE DIRECTORY TO THE GLOBAL PATH ***
 echo ${PWD}
-echo "NAME _+_>${myversion}"
-  cd /Users/CS012/Abdul/ReactNative/Practice/demoAPP/ios/demoAPP
+echo "NAME _+_>${APP_NAME}"
+ls
+  cd /ios/demoAPP
+  ls
 echo "\n aftedr ${PWD}"
     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
     # ls
