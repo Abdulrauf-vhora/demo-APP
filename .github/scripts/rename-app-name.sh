@@ -21,8 +21,7 @@ cat Info.plist
 cd ..
 
 ls
-sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME,g" $APP_NAME.xcodeproj/project.pbxproj
-
+sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME;,g" $APP_NAME.xcodeproj/project.pbxproj
 echo " <== IOS SIDE CHANGES DONE"
 echo "ANDROID SIDE CHANGES START ==>"
 
