@@ -14,23 +14,23 @@ rm -rf yarn.lock package-lock.json node_modules
 rm -rf android/app/build
 rm -rf ios/Pods 
     ls
-    cd ios
-echo "la after cd/ios ==>"
-ls
 # rm ios/Podfile.lock 
 # rm -rf ~/Library/Developer/Xcode/DerivedData
-# echo "<== Project CLEANUP PROCESS END ==>"
-# ls
+echo "<== Project CLEANUP PROCESS END ==>"
+ls
 
-# cd ios
-# ls
+cd ios
+ls
 
-# echo "XCODE BUILD CLEAN PROCESS START ==>"
-# xcodebuild clean
-# echo "<== XCODE BUILD CLEAN PROCESS END ==>"
+echo "XCODE BUILD CLEAN PROCESS START ==>"
+xcodebuild clean
+echo "<== XCODE BUILD CLEAN PROCESS END ==>"
+ls
+cd ..
+echo "<== when start yarn "
 
-# cd ..
-# yarn && cd ios && pod update && cd ..
+ls
+yarn && cd ios && pod update && cd ..
 
-# echo "<== PROJECT CLEANUP PROCESS END"
+echo "<== PROJECT CLEANUP PROCESS END"
 
