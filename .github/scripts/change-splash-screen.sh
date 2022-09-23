@@ -2,7 +2,10 @@
 set -e
 # change-splash-screen.sh
 ls
-LOGO_PATH= cd assets/splash.jpg
+echo "@@@@@@@ ==>"
+
+cd assets
+# LOGO_PATH= cd assets/splash.jpg
 ls
 # PROJECT_PATH=$1
 # cd $PROJECT_PATH
@@ -11,9 +14,9 @@ ls
 # watchman watch-del-all
 echo "CHANGE SPLASH SCREEN PROCESS START ==>"
 ls
-echo "logo path $LOGO_PATH"
-yarn react-native generate-bootsplash $LOGO_PATH --background-color=F5FCFF
-ls
+# echo "logo path $LOGO_PATH"
+# yarn react-native generate-bootsplash /splash.jpg --background-color=F5FCFF
+# ls
 
 echo "<== CHANGE SPLASH SCREEN PROCESS END ==>"
 
