@@ -2,7 +2,7 @@
 
 #!/bin/zsh
 set -e
-# APP_NAME=$1
+APP_NAME=$1
 myversion=ABDUL
 # *** CHANGE DIRECTORY TO THE GLOBAL PATH ***
 echo ${PWD}
@@ -10,8 +10,9 @@ echo ${PWD}
 echo "1st ls"
 ls
 echo "end 1st ls end"
-#   cd /Users/CS012/Abdul/ReactNative/Practice/AwesomeProject/ios/demoApp
-  cd ios/demoApp
+  cd /Users/CS012/Abdul/ReactNative/Practice/demoApp/ios/demoApp
+
+#   cd ios/demoApp
   ls
 echo "2nd ls"
 # echo "\n aftedr ${PWD}"
@@ -23,7 +24,7 @@ echo "2nd ls"
 # #  cd Info.plist
  ls
     # demo=/usr/libexec/PlistBuddy
-     /usr/libexec/PlistBuddy Set CFBundleDisplayName abdul Info.plist
+    /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist
 
 # plutil -replace LSRequiresIPhoneOS -bool false Info.plist
     # cd /android/app/src/main/res/values 
