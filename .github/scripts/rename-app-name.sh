@@ -12,7 +12,9 @@ cd ios/$APP_NAME
 
 echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
   #  INFO: rename ios name using plist buddy
+  ls
 ${PLISTBUDDY} -c "Set :CFBundleDisplayName ${APP_NAME}" "Info.plist"
+
 echo "CHANGE IN INFO.PLIST SCRIPT END ==>"
 
 cat Info.plist
