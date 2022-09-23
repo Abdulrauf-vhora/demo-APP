@@ -33,7 +33,7 @@ cat $APP_NAME.xcodeproj/project.pbxproj
     # /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist
 # INFO: For android
 
-
+cd ..
  cd /android/app/src/main/res/values 
  sed -i "" -e 's+<string name="app_name">.*</string>+<string name="app_name">'${APP_NAME}'</string>+g' strings.xml
  echo "STRINGS ANDROID"
