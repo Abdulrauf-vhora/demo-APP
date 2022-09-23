@@ -9,9 +9,10 @@ echo ${PWD}
 echo "NAME _+_>${APP_NAME}"
 echo "1st ls"
 ls
-  cd ios
-echo "2nd ls"
+echo "end 1st ls end"
+  cd ios/demoApp
   ls
+echo "2nd ls"
 # echo "\n aftedr ${PWD}"
 #     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
 #     # ls
