@@ -7,26 +7,34 @@ PLISTBUDDY="/usr/libexec/PlistBuddy"
 # *** CHANGE DIRECTORY TO THE GLOBAL PATH ***
 echo ${PWD}
 # demo='/usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist'
-echo "1st ls"
-ls
-echo "end 1st ls end"
-
-# cd /Users/CS012/Abdul/ReactNative/Practice/demoApp/ios/demoApp
-  cd ios/demoApp
-  ls
-echo "2nd ls"
-# echo "\n aftedr ${PWD}"
-#     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
-#     # ls
-# sed -i '' 's/<string>myName/<string>newName/' 'info.plist'
-#  newvalue=`abdul`
-#  sed -i "" -e 's+<key>CFBundleDisplayName</key> *\=.*\/<key>CFBundleDisplayName</key>/ = abdul+' Info.plist
-# #  cd Info.plist
+ 
+ 
  ls
-    # demo=/usr/libexec/PlistBuddy
-${PLISTBUDDY} -c "Set :CFBundleDisplayName ${APP_NAME}" "Info.plist"
-    # /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist
+#  INFO: rename using package
+npx react-native-rename $APP_NAME -b com.$APP_NAME
 
+cd ios/$APP_NAME
+ 
+ 
+ 
+ echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
+ 
+ #  INFO: rename ios name using plist buddy
+${PLISTBUDDY} -c "Set :CFBundleDisplayName ${APP_NAME}" "Info.plist"
+ 
+echo "INFO PLIST"
+cat Info.plist
+sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME,g" $APP_NAME.xcodeproj/project.pbxproj
+echo "XCODE PROJECT"
+cat $APP_NAME.xcodeproj
+    # /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist
+# INFO: For android
+
+
+ cd /android/app/src/main/res/values 
+ sed -i "" -e 's+<string name="app_name">.*</string>+<string name="app_name">'${APP_NAME}'</string>+g' strings.xml
+ echo "STRINGS ANDROID"
+ cat strings.xml
 # plutil -replace LSRequiresIPhoneOS -bool false Info.plist
     # cd /android/app/src/main/res/values 
     # ls
