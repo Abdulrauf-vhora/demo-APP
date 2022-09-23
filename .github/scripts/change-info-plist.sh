@@ -16,7 +16,7 @@ echo "2nd ls"
 # echo "\n aftedr ${PWD}"
 #     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
 #     # ls
-     usr/libexec/PlistBuddy Set CFBundleDisplayName abdul Info.plist
+     /usr/libexec/PlistBuddy Set CFBundleDisplayName abdul Info.plist
     #  usr/libexec/PlistBuddy  "Set CFBundleDisplayName $APP_NAME" Info.plist
 
     # sed -i "" -e 's+<key>CFBundleDisplayName.*</key>+<key>CFBundleDisplayName>'${APP_NAME}'</key>+g' Info.plist
