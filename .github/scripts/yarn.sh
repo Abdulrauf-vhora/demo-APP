@@ -14,6 +14,9 @@ rm -rf yarn.lock package-lock.json node_modules
 rm -rf android/app/build
 rm -rf ios/Pods 
     ls
+    cd ios
+echo "la after cd/ios ==>"
+ls
 # rm ios/Podfile.lock 
 # rm -rf ~/Library/Developer/Xcode/DerivedData
 # echo "<== Project CLEANUP PROCESS END ==>"
