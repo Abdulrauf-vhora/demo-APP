@@ -1,4 +1,4 @@
-/Users/CS012/Abdul/ReactNative/Practice/AwesomeProject/package.json
+
 
 #!/bin/zsh
 set -e
@@ -10,9 +10,9 @@ echo ${PWD}
 echo "1st ls"
 ls
 echo "end 1st ls end"
-  cd /Users/CS012/Abdul/ReactNative/Practice/demoApp/ios/demoApp
 
-#   cd ios/demoApp
+
+  cd ios/demoApp
   ls
 echo "2nd ls"
 # echo "\n aftedr ${PWD}"
