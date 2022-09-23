@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Checkout code for app release
         uses: actions/checkout@v2
-      - name: install plutil
-        run: sudo apt install libpng-dev libpng16-16 libxml2-dev pkg-config ninja-build
+      # - name: install plutil
+      #   run: sudo apt install libpng-dev libpng16-16 libxml2-dev pkg-config ninja-build
       - name: change in info.plist file
         run: sh ./.github/scripts/change-info-plist.sh testApp
       # - name: rename project
