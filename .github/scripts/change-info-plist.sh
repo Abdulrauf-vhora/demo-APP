@@ -24,6 +24,9 @@ ${PLISTBUDDY} -c "Set :CFBundleDisplayName ${APP_NAME}" "Info.plist"
  
 echo "INFO PLIST"
 cat Info.plist
+cd ..
+echo "IOS"
+ls
 sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME,g" $APP_NAME.xcodeproj/project.pbxproj
 echo "XCODE PROJECT"
 cat $APP_NAME.xcodeproj
