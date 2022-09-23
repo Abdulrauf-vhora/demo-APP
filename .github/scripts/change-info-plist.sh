@@ -1,7 +1,9 @@
 
 
-#!/bin/zsh
-set -e
+#!/bin/bash
+
+set -o pipefail
+
 APP_NAME=$1
 myversion=ABDUL
 # *** CHANGE DIRECTORY TO THE GLOBAL PATH ***
