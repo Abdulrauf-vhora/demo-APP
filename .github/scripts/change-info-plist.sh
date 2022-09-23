@@ -29,12 +29,12 @@ echo "IOS"
 ls
 sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME,g" $APP_NAME.xcodeproj/project.pbxproj
 echo "XCODE PROJECT"
-cat $APP_NAME.xcodeproj/project.pbxproj
+# cat $APP_NAME.xcodeproj/project.pbxproj
     # /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist
 # INFO: For android
 
-cd ..
- cd /android/app/src/main/res/values 
+ 
+ cd ../android/app/src/main/res/values 
  sed -i "" -e 's+<string name="app_name">.*</string>+<string name="app_name">'${APP_NAME}'</string>+g' strings.xml
  echo "STRINGS ANDROID"
  cat strings.xml
