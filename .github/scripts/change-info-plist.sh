@@ -29,7 +29,7 @@ echo "IOS"
 ls
 sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME,g" $APP_NAME.xcodeproj/project.pbxproj
 echo "XCODE PROJECT"
-cat $APP_NAME.xcodeproj
+cat $APP_NAME.xcodeproj/project.pbxproj
     # /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist
 # INFO: For android
 
