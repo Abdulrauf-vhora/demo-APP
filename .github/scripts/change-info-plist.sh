@@ -1,12 +1,12 @@
-# /Users/CS012/Abdul/ReactNative/Practice/AwesomeProject/package.json
+/Users/CS012/Abdul/ReactNative/Practice/AwesomeProject/package.json
 
 #!/bin/zsh
 set -e
-APP_NAME=$1
+# APP_NAME=$1
 myversion=ABDUL
 # *** CHANGE DIRECTORY TO THE GLOBAL PATH ***
 echo ${PWD}
-echo "NAME _+_>${APP_NAME}"
+
 echo "1st ls"
 ls
 echo "end 1st ls end"
@@ -18,19 +18,14 @@ echo "2nd ls"
 #     echo "CHANGE IN INFO.PLIST SCRIPT START ==>"
 #     # ls
 # sed -i '' 's/<string>myName/<string>newName/' 'info.plist'
- key=CFBundleDisplayName
- newvalue=\"ABDUL\"
- sed -i -e "s/${key} *\=.*\;/${key} = ${newvalue}\;/" Info.plist
-#  cd Info.plist
+#  newvalue=`abdul`
+#  sed -i "" -e 's+<key>CFBundleDisplayName</key> *\=.*\/<key>CFBundleDisplayName</key>/ = abdul+' Info.plist
+# #  cd Info.plist
  ls
- echo "${}"
-# sed -i '' 's+<key>CFBundleDisplayName</key><string>demoApp</string>abdul+' 'info.plist'
-    #  usr/libexec/PlistBuddy Set CFBundleDisplayName abdul Info.plist
-    #  usr/libexec/PlistBuddy  "Set CFBundleDisplayName $APP_NAME" Info.plist
+    # demo=/usr/libexec/PlistBuddy
+     /usr/libexec/PlistBuddy Set CFBundleDisplayName abdul Info.plist
 
-    # sed -i "" -e 's+<key>CFBundleDisplayName.*</key>+<key>CFBundleDisplayName>'${APP_NAME}'</key>+g' Info.plist
-    # sed -i "" -e 's+<string name="app_name">.*</string>+<string name="app_name">'${APP_NAME}'</string>+g' strings.xml
-    # plutil -replace CFBundleDisplayName -string $APP_NAME Info.plist
+# plutil -replace LSRequiresIPhoneOS -bool false Info.plist
     # cd /android/app/src/main/res/values 
     # ls
     # echo "android time PWD after ls ==> ${PWD}"
