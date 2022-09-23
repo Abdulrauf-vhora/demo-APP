@@ -3,7 +3,7 @@
 set -e
 
 APP_NAME=$1
-myversion=ABDUL
+PLISTBUDDY="/usr/libexec/PlistBuddy"
 # *** CHANGE DIRECTORY TO THE GLOBAL PATH ***
 echo ${PWD}
 # demo='/usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist'
@@ -11,8 +11,8 @@ echo "1st ls"
 ls
 echo "end 1st ls end"
 
-# cd /Users/CS012/Abdul/ReactNative/Practice/demoApp/ios/demoApp
-  cd ios/demoApp
+cd /Users/CS012/Abdul/ReactNative/Practice/demoApp/ios/demoApp
+#   cd ios/demoApp
   ls
 echo "2nd ls"
 # echo "\n aftedr ${PWD}"
@@ -24,9 +24,7 @@ echo "2nd ls"
 # #  cd Info.plist
  ls
     # demo=/usr/libexec/PlistBuddy
-    echo "!!"
-    /usr/libexec/PlistBuddy -c "Print :CFBundleDisplayName" Info.plist 
-    echo "@@"
+${PLISTBUDDY} -c "Set :CFBundleDisplayName ${APP_NAME}" "Info.plist"
     # /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName ${APP_NAME}" Info.plist
 
 # plutil -replace LSRequiresIPhoneOS -bool false Info.plist
