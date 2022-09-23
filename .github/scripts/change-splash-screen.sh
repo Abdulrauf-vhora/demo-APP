@@ -14,7 +14,7 @@ ls
 # echo "CHANGE SPLASH SCREEN PROCESS START ==>"
 # ls
 echo "logo path $LOGO_PATH"
-npm react-native generate-bootsplash $LOGO_PATH --background-color=F5FCFF
+yarn react-native generate-bootsplash $LOGO_PATH --background-color=F5FCFF
 # # ls
 
 echo "<== CHANGE SPLASH SCREEN PROCESS END ==>"
