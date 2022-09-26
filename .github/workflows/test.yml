@@ -11,8 +11,7 @@ jobs:
 
     - name: local
       run: |
-       cd ios/demoApp
-       /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName TestingAPPNAME" "Info.plist"
+        npx react-native-rename abdul -b com.abdul
 
     - name: Commit files
       run: |
