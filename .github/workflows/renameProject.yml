@@ -6,6 +6,11 @@ name: Change Project Name
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      appName:
+        description: 'Your App Name'
+        required: true
+        default: 'testingAppName'
 jobs:
   rename-roject-name:
     name: Project Rename
@@ -13,6 +18,7 @@ jobs:
     steps:
       - name: Checkout code for app release
         uses: actions/checkout@v2
+        
 
       - name: Set up our JDK environment # setup JDK environment: mandatory as we need to build  android project
         uses: actions/setup-java@v1.4.3
@@ -20,7 +26,7 @@ jobs:
           java-version: 11
 
       - name: Change App name
-        run: sh ./.github/scripts/rename-app-name.sh testApplication
+        run: sh ./.github/scripts/rename-app-name.sh github.event.inputs.appName
 
       - name: Clean Project
         run: sh ./.github/scripts/clean.sh
