@@ -27,11 +27,6 @@ jobs:
       - name: Change App name
         run: sh ./.github/scripts/rename-app-name.sh ${{ github.event.inputs.appName }}
 
-      - name: Checkout Current Repository
-        uses: actions/checkout@v2
-        with:
-          path: ./source-repo/
-
       - name: Commit files
         run: |
           git config --local user.email "abdulrauf_vhora@codenticsoftware.com"
