@@ -9,6 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: local
+      run: |
+        cd ios/
+        sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME;,g" $APP_NAME.xcodeproj/project.pbxproj
+
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
