@@ -4,20 +4,23 @@ on:
     branches:
       - main
 jobs:
-  release:
-    name: publish
-    runs-on: macOS-latest
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.4.2
- 
-      - name: Commit files
-        run: |
-          git config --local user.email "abdulrauf_vhora@codenticsoftware.com"
-          git config --local user.name "Abdulrauf-vhora"
-          git commit -m "Add changes"
-      - name: Push changes
-        uses: Abdulrauf-vhora/demo-APP@main
-        with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
-          branch: main
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+    - name: Create local changes
+      run: |
+        ...
+    - name: Commit files
+      run: |
+        git config --local user.email "abdulrauf_vhora@codenticsoftware.com"
+        git config --local user.name "Abdulrauf-vhora"
+        git commit -m "Add changes" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master  
+      with:
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+        branch: main
