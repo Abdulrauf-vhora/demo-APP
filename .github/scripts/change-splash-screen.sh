@@ -15,11 +15,11 @@ ls
 # watchman watch-del-all
 # echo "CHANGE SPLASH SCREEN PROCESS START ==>"
 # ls
-yarn react-native generate-bootsplash /splash.jpg --background-color=F5FCFF
+yarn react-native generate-bootsplash splash.jpg --background-color=F5FCFF
 echo "@@@@@@@ ls 33==>"
 ls
 
-cd ../../
+cd ..
 echo "@@@@@@@ ls 44==>"
 
 ls
