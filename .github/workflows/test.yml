@@ -18,7 +18,7 @@ jobs:
           git config --local user.name "abdul"
           git commit -m "Add changes" -a
       - name: Push changes
-        uses: Abdulrauf-vhora/demo-CI-CD@main
+        uses: Abdulrauf-vhora/demo-APP@main
         with:
           branch: main
           github_token: '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'
