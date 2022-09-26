@@ -15,7 +15,7 @@ ls
 # watchman watch-del-all
 # echo "CHANGE SPLASH SCREEN PROCESS START ==>"
 # ls
-echo "logo path ${yarn react-native generate-bootsplash /splash.jpg --background-color=F5FCFFH}"
+# echo "logo path ${yarn react-native generate-bootsplash /splash.jpg --background-color=F5FCFFH}"
 yarn react-native generate-bootsplash /splash.jpg --background-color=F5FCFF
 # # ls
 
