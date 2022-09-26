@@ -8,10 +8,12 @@ echo "<== ls"
 ls
   #  INFO:CHANGE APP ICON PROCESS START
 echo "<== ls ==>"
-cd assets
+
 ls
-iconset create appLogo.png
-# cd ..
+iconset create cd assets/appLogo.png
+cd ..
+echo "<== ls 2==>"
+ls
 # echo "<== CHANGE APP ICON PROCESS END"
 # ls
   #  INFO:CHANGE APP ICON PROCESS END
