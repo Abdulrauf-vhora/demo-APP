@@ -5,17 +5,12 @@ on:
       - main
 jobs:
   release:
-  name: publish
+    name: publish
     runs-on: macOS-latest
     steps:
-      - name: chekout code
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
-      - name: Create local changes
-        run: |
-          ... 
+      - name: Checkout
+        uses: actions/checkout@v2.4.2
+ 
       - name: Commit files
         run: |
           git config --local user.email "abdulrauf_vhora@codenticsoftware.com"
@@ -24,5 +19,5 @@ jobs:
       - name: Push changes
         uses: Abdulrauf-vhora/demo-APP@main
         with:
-          github_token: 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
+          github_token: ${{ secrets.ACCESS_TOKEN }}
           branch: main
