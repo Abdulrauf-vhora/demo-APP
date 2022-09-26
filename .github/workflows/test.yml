@@ -7,8 +7,10 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
-      - name: Checkout code for app release
-        uses: actions/checkout@v2
+      - name: Checkout Current Repository
+        uses: checkout/checkout@v2
+        with:
+         path: ./source-repo/
         
       - name: Commit files
         run: |
