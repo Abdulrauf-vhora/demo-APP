@@ -7,6 +7,7 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
+      - name: chekout code
       - uses: actions/checkout@v2
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
