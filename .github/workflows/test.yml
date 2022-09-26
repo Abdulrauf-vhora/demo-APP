@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Create local changes
-        run: |
+        run: | 
              ...
       - name: Commit files
         run: |
