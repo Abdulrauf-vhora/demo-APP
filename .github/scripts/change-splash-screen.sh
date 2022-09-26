@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
-ls
-# LOGO_PATH=cd assets/splash.jpg
-cd assets
+echo "<== CHANGE SPLASH SCREEN PROCESS START"
+SPLASH_IMAGE_PATH='assets/splashImage.jpeg'
+echo "<== SPLASH IMAGE PATH==> $SPLASH_IMAGE_PATH"
 
 # INFO "CHANGE SPLASH SCREEN PROCESS START ==>"
 # ls
-yarn react-native generate-bootsplash splash.jpg --background-color=F5FCFF
-echo "@@@@@@@ ls 33==>"
-ls
-# INFO "CHANGE SPLASH SCREEN PROCESS END ==>"
+yarn react-native generate-bootsplash $SPLASH_IMAGE_PATH --background-color=F5FCFF
+
+echo "<== CHANGE SPLASH SCREEN PROCESS END"
+  #  INFO:CHANGE SPLASH SCREEN PROCESS END
 

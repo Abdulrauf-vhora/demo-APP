@@ -1,25 +1,16 @@
 #!/bin/bash
 set -e
 echo "<== CHANGE APP ICON PROCESS START"
-echo "<== ls 0.1==>"
 
+APP_ICON_PATH='assets/logo.png'
 ls
-demo='assets/appLogo.png'
-ls
-echo "only path==> $demo"
+echo "logoPath ==> $APP_ICON_PATH"
 
 yarn global add icon-set-creator
 
-# echo "<== ls 1==>"
-# ls
-#   #  INFO:CHANGE APP ICON PROCESS START
-
-iconset create $demo
+iconset create $APP_ICON_PATH
 ls
-
-# ls
 echo "<== CHANGE APP ICON PROCESS END"
-# ls
   #  INFO:CHANGE APP ICON PROCESS END
 
 

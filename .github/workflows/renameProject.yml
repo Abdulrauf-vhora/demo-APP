@@ -45,5 +45,5 @@ jobs:
       - name: Upload release APK
         uses: actions/upload-artifact@v2
         with:
-          name: demoApp.apk
+        name: ${{ github.event.inputs.appName }}
           path: android/app/build/outputs/apk/release/app-release.apk
