@@ -9,8 +9,8 @@ ls
   #  INFO:CHANGE APP ICON PROCESS START
 echo "<== ls ==>"
 
-ls
-iconset create cd assets/appLogo.png
+cd assets
+iconset create /appLogo.png
 cd ..
 echo "<== ls 2==>"
 ls
