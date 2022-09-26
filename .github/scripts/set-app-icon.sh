@@ -10,6 +10,7 @@ echo "<== ls 1==>"
 ls
   #  INFO:CHANGE APP ICON PROCESS START
 
+echo "only path==> $path"
 echo "path==> $path/appLogo.png"
 # iconset create "$path/appLogo.png"
 ls
