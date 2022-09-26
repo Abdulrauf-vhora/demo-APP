@@ -20,7 +20,7 @@ jobs:
           git config --local user.name "Abdulrauf-vhora"
           git commit -m "Add changes" -a
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: Abdulrauf-vhora/demo-APP@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          github_token: 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
+          branch: main
