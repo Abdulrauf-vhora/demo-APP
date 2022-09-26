@@ -5,7 +5,7 @@ ls
 echo "@@@@@@@ 11==>"
 
 # LOGO_PATH=cd assets/splash.jpg
-cd assets/splash.jpg
+cd assets
 echo "@@@@@@@ 22==>"
 ls
 # PROJECT_PATH=$1
@@ -15,8 +15,8 @@ ls
 # watchman watch-del-all
 # echo "CHANGE SPLASH SCREEN PROCESS START ==>"
 # ls
-echo "logo path $LOGO_PATH"
-# yarn react-native generate-bootsplash $LOGO_PATH --background-color=F5FCFF
+echo "logo path ${yarn react-native generate-bootsplash /splash.jpg --background-color=F5FCFFH}"
+yarn react-native generate-bootsplash /splash.jpg --background-color=F5FCFF
 # # ls
 
 echo "<== CHANGE SPLASH SCREEN PROCESS END ==>"
