@@ -57,7 +57,9 @@ const Section = ({children, title}) => {
 const App = () => {
   useEffect(() => {
     // INFO: To hide native splash screen
-    RNBootSplash.hide({fade: true});
+    setTimeout(() => {
+      RNBootSplash.hide({fade: true});
+    }, 250);
   }, []);
   const isDarkMode = useColorScheme() === 'dark';
 
