@@ -11,8 +11,8 @@ jobs:
 
     - name: local
       run: |
-        cd ios
-        sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.demoApp;,g" demoApp.xcodeproj/project.pbxproj
+       cd ios/demoApp
+       /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName TestingAPPNAME" "Info.plist"
 
     - name: Commit files
       run: |
