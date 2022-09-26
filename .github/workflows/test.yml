@@ -4,7 +4,8 @@ on:
     branches:
       - main
 jobs:
-  build:
+  release:
+  name: publish
     runs-on: macOS-latest
     steps:
       - name: chekout code
