@@ -15,7 +15,7 @@ jobs:
       - name: Commit files
         run: |
           git config --local user.email "abdulrauf_vhora@codenticsoftware.com"
-          git config --local user.name "abdul"
+          git config --local user.name "Abdulrauf-vhora"
           git commit -m "Add changes" -a
       - name: Push changes
         uses: Abdulrauf-vhora/demo-APP@main
