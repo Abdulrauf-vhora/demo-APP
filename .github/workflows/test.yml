@@ -12,7 +12,7 @@ jobs:
     - name: local
       run: |
         cd ios/
-        sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME;,g" $APP_NAME.xcodeproj/project.pbxproj
+        sed -i '' -e "s,PRODUCT_BUNDLE_IDENTIFIER = .*,PRODUCT_BUNDLE_IDENTIFIER = com.$APP_NAME;,g" demoApp.xcodeproj/project.pbxproj
 
     - name: Commit files
       run: |
