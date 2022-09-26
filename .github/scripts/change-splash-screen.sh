@@ -5,7 +5,7 @@ ls
 echo "@@@@@@@ 11==>"
 
 # LOGO_PATH=cd assets/splash.jpg
-cd assets
+cd assets/splash.jpg
 echo "@@@@@@@ 22==>"
 ls
 # PROJECT_PATH=$1
