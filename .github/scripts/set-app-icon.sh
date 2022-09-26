@@ -9,7 +9,7 @@ ls
 echo "only path==> $demo"
 
 # yarn global add icon-set-creator
-# echo "cd "$(dirname "$0")""
+
 # echo "<== ls 1==>"
 # ls
 #   #  INFO:CHANGE APP ICON PROCESS START
