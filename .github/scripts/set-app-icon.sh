@@ -10,8 +10,8 @@ echo "<== ls 1==>"
 ls
   #  INFO:CHANGE APP ICON PROCESS START
 
-echo "<== ls 2==> "$path"/appLogo.png"
-iconset create "$path"/appLogo.png
+echo "<== ls 2==> "$path/appLogo.png""
+iconset create "$path/appLogo.png"
 ls
 
 # ls
