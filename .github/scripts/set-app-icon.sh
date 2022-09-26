@@ -8,7 +8,7 @@ demo='assets/appLogo.png'
 ls
 echo "only path==> $demo"
 
-# yarn global add icon-set-creator
+yarn global add icon-set-creator
 
 # echo "<== ls 1==>"
 # ls
