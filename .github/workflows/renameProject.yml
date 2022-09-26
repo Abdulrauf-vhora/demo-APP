@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-java@v1.4.3
         with:
           java-version: 11
-
+      
       - name: Change App name
         run: sh ./.github/scripts/rename-app-name.sh ${{ github.event.inputs.appName }}
 
@@ -47,3 +47,16 @@ jobs:
         with:
           name: Generated Apk
           path: android/app/build/outputs/apk/release/app-release.apk
+          
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git checkout -b GH-action
+          git commit -m "Add changes" -a
+        
+      - name: Push changes
+        uses: ad-m/github-push-action@master  
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}          
