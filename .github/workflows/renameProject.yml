@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Checkout code for app release
         uses: actions/checkout@v2
-        
+
       - name: Set up our JDK environment # setup JDK environment: mandatory as we need to build  android project
         uses: actions/setup-java@v1.4.3
         with:
@@ -41,5 +41,6 @@ jobs:
         with:
           name: testApplication-app.apk
           path: android/app/build/outputs/apk/release/app-release.apk
-      # - name: Change Splash Screen
-      #   run: sh ./.github/scripts/change-splash-screen.sh
+
+      - name: Change Splash Screen
+        run: sh ./.github/scripts/change-splash-screen.sh
