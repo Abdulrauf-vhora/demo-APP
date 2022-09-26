@@ -4,9 +4,9 @@ echo "<== CHANGE APP ICON PROCESS START"
 echo "<== ls 0.1==>"
 
 ls
-path= 'cd assets'
+demo='/assests'
 ls
-echo "only path==> $path"
+echo "only path==> $demo"
 # cd ..
 # yarn global add icon-set-creator
 # echo "cd "$(dirname "$0")""
@@ -15,7 +15,7 @@ echo "only path==> $path"
 #   #  INFO:CHANGE APP ICON PROCESS START
 
 # echo "path==> $path/appLogo.png"
-# # iconset create "$path/appLogo.png"
+# iconset create "$path/appLogo.png"
 ls
 
 # ls
