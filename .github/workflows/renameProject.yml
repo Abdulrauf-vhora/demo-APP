@@ -19,10 +19,10 @@ jobs:
       - name: Checkout code for app release
         uses: actions/checkout@v2
 
-      - name: Set up our JDK environment # setup JDK environment: mandatory as we need to build  android project
-        uses: actions/setup-java@v1.4.3
-        with:
-          java-version: 11
+      # - name: Set up our JDK environment # setup JDK environment: mandatory as we need to build  android project
+      #   uses: actions/setup-java@v1.4.3
+      #   with:
+      #     java-version: 11
 
       # - name: Change App name
       #   run: sh ./.github/scripts/rename-app-name.sh ${{ github.event.inputs.appName }}

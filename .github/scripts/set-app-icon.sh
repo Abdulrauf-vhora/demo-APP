@@ -2,7 +2,9 @@
 set -e
 echo "<== CHANGE APP ICON PROCESS START"
 ls
-path= cd /assets/appLogo.png
+path= cd assets/appLogo.png
+echo "<== ls"
+ls
   #  INFO:CHANGE APP ICON PROCESS START
 yarn global add icon-set-creator
 echo "<== ls ==>"
