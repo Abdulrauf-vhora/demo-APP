@@ -34,4 +34,4 @@ jobs:
       #     name: pick-store-app.apk
       #     path: android/app/build/outputs/apk/release/app-release.apk
       - name: Change Splash Screen
-        run: yarn react-native generate-bootsplash
+        run: sh ./.github/scripts/change-splash-screen.sh
