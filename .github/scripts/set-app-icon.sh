@@ -4,9 +4,9 @@ echo "<== CHANGE APP ICON PROCESS START"
 echo "<== ls 0.1==>"
 
 ls
-path= 'cd assets/'
-echo "only path==> $path"
+path= 'cd assets'
 ls
+echo "only path==> $path"
 # cd ..
 # yarn global add icon-set-creator
 # echo "cd "$(dirname "$0")""
