@@ -3,17 +3,15 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: macOS-latest
     steps:
-      - name: Checkout code for app release
+      - name: Checkout Current Repository
         uses: actions/checkout@v2
+        with:
+          path: ./source-repo/
 
-      - name: Create local changes
-        run: |
-          ...
       - name: Commit files
         run: |
           git config --local user.email "abdulrauf_vhora@codenticsoftware.com"
