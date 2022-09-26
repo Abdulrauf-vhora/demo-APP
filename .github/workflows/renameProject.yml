@@ -16,8 +16,8 @@ jobs:
 
       # - name: Change App name
       #   run: sh ./.github/scripts/rename-app-name.sh testApplication
-      - name: Clean Project
-        run: sh ./.github/scripts/yarn.sh
+      # - name: Clean Project
+      #   run: sh ./.github/scripts/yarn.sh
 
       # - name: rename project
       #   run: sh ./.github/scripts/rename.sh onlineApp onlineApplication
@@ -34,4 +34,4 @@ jobs:
       #     name: pick-store-app.apk
       #     path: android/app/build/outputs/apk/release/app-release.apk
       - name: Change Splash Screen
-        run: yarn react-native generate-bootsplash /Users/CS012/Abdul/ReactNative/Practice/demoApp/assets/splash.jpg --background-color=F5FCFF
+        run: yarn react-native generate-bootsplash

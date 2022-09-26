@@ -4,7 +4,8 @@ set -e
 ls
 echo "@@@@@@@ 11==>"
 
-LOGO_PATH=$1
+LOGO_PATH=cd assets/splash.jpg
+echo "@@@@@@@ 22==>"
 ls
 # PROJECT_PATH=$1
 # cd $PROJECT_PATH
@@ -14,7 +15,7 @@ ls
 # echo "CHANGE SPLASH SCREEN PROCESS START ==>"
 # ls
 echo "logo path $LOGO_PATH"
-yarn react-native generate-bootsplash $LOGO_PATH --background-color=F5FCFF
+# yarn react-native generate-bootsplash $LOGO_PATH --background-color=F5FCFF
 # # ls
 
 echo "<== CHANGE SPLASH SCREEN PROCESS END ==>"
