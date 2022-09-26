@@ -1,5 +1,4 @@
-#!/bin/bash
-# GLOBAL_PATH='/Users/CS005/Kevin/Scripting/scripting-demo/react-native-app'
+!/bin/bash
 
 PROJECT_NAME=$1
 GLOBAL_PATH=$2
