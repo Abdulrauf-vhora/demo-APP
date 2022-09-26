@@ -4,7 +4,7 @@ echo "<== CHANGE APP ICON PROCESS START"
 echo "<== ls 0.1==>"
 
 ls
-demo='/assests/appLogo.png'
+demo='assests/appLogo.png'
 ls
 echo "only path==> $demo"
 
