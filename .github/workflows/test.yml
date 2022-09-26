@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       - name: Create local changes
         run: |
-          ...
+          ... 
       - name: Commit files
         run: |
           git config --local user.email "abdulrauf_vhora@codenticsoftware.com"
