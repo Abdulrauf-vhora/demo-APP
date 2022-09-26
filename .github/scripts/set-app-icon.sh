@@ -1,8 +1,10 @@
 #!/bin/bash
 set -e
 echo "<== CHANGE APP ICON PROCESS START"
-path= cd assets/
+echo "<== ls 0.1==>"
+
 ls
+path= cd assets/
 cd ..
 # yarn global add icon-set-creator
 
