@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "abdul.app"
-               BlueprintName = "abdul"
-               ReferencedContainer = "container:abdul.xcodeproj">
+               BuildableName = "dummyApp.app"
+               BlueprintName = "dummyApp"
+               ReferencedContainer = "container:dummyApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "abdulTests.xctest"
-               BlueprintName = "abdulTests"
-               ReferencedContainer = "container:abdul.xcodeproj">
+               BuildableName = "dummyAppTests.xctest"
+               BlueprintName = "dummyAppTests"
+               ReferencedContainer = "container:dummyApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "abdul.app"
-            BlueprintName = "abdul"
-            ReferencedContainer = "container:abdul.xcodeproj">
+            BuildableName = "dummyApp.app"
+            BlueprintName = "dummyApp"
+            ReferencedContainer = "container:dummyApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "abdul.app"
-            BlueprintName = "abdul"
-            ReferencedContainer = "container:abdul.xcodeproj">
+            BuildableName = "dummyApp.app"
+            BlueprintName = "dummyApp"
+            ReferencedContainer = "container:dummyApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
