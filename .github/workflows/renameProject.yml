@@ -44,11 +44,11 @@ jobs:
       # - name: Install npm dependencies
       #   run: npm install --legacy-peer-deps
 
-      # - name: Change Splash Screen
-      #   run: sh ./.github/scripts/change-splash-screen.sh
+      - name: Change Splash Screen
+        run: sh ./.github/scripts/change-splash-screen.sh ${{ github.event.inputs.appLogoPath }}
 
-      - name: Change App Icon
-        run: sh ./.github/scripts/set-app-icon.sh ${{ github.event.inputs.appLogoPath }}
+      # - name: Change App Icon
+      #   run: sh ./.github/scripts/set-app-icon.sh ${{ github.event.inputs.appLogoPath }}
 
       # - name: Generate signed APK
       #   run: cd android && ./gradlew app:assembleRelease
