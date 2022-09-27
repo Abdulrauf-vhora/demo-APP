@@ -38,8 +38,8 @@ jobs:
       # - name: Change App name
       #   run: sh ./.github/scripts/rename-app-name.sh ${{ github.event.inputs.appName }}
 
-      # - name: Clean Project
-      #   run: sh ./.github/scripts/clean.sh
+      - name: Clean Project
+        run: sh ./.github/scripts/clean.sh
 
       # - name: Install npm dependencies
       #   run: npm install --legacy-peer-deps
