@@ -8,9 +8,14 @@ on:
   workflow_dispatch:
     inputs:
       appName:
-        description: 'Your App Name'
+        description: 'New app name that you want to change'
         required: true
         default: 'testingAppName'
+
+      branchName:
+        description: 'Github branch name'
+        required: true
+        default: 'branchName'
 jobs:
   rename-roject-name:
     name: Project Rename
@@ -23,7 +28,7 @@ jobs:
         uses: actions/setup-java@v1.4.3
         with:
           java-version: 11
-      
+
       - name: Change App name
         run: sh ./.github/scripts/rename-app-name.sh ${{ github.event.inputs.appName }}
 
@@ -47,16 +52,16 @@ jobs:
         with:
           name: Generated Apk
           path: android/app/build/outputs/apk/release/app-release.apk
-          
+
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git checkout -b GH-action
+          git checkout -b action
           git commit -m "Add changes" -a
-        
+
       - name: Push changes
-        uses: ad-m/github-push-action@master  
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}          
+          branch: ${{ github.ref }}
