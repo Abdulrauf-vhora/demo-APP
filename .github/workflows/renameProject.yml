@@ -16,8 +16,13 @@ on:
         description: 'Github branch name'
         required: true
         default: 'branchName'
-        tags:
-        description: 'Test scenario tags' 
+        
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'  
 jobs:
   rename-roject-name:
     name: Project Rename
