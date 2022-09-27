@@ -16,6 +16,11 @@ on:
         description: 'Github branch name'
         required: true
         default: 'branchName'
+        
+      appLogoPath:
+        description: 'Application logo path (*png format)'
+        required: true
+        default: 'logo.png'  
  
 jobs:
   rename-roject-name:
@@ -43,7 +48,7 @@ jobs:
         run: sh ./.github/scripts/change-splash-screen.sh
 
       - name: Change App Icon
-        run: sh ./.github/scripts/set-app-icon.sh
+        run: sh ./.github/scripts/set-app-icon.sh ${{ github.event.inputs.appLogoPath }}
 
       - name: Generate signed APK
         run: cd android && ./gradlew app:assembleRelease
@@ -65,4 +70,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: ${{ github.event.inputs.branchName }}
