@@ -22,7 +22,7 @@ on:
         required: true
         default: 'warning'
       tags:
-        description: 'Test scenario tags'  
+        options: ["1","2"]  
 jobs:
   rename-roject-name:
     name: Project Rename
