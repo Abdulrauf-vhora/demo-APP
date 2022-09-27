@@ -1,4 +1,4 @@
-package com.darshan;
+package com.testpurpose;
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "darshan";
+    return "testPurpose";
   }
     // INFO: Splash Screen setup for react-native-bootsplash 
   @Override
