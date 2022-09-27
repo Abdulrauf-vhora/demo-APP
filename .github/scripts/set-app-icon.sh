@@ -2,8 +2,8 @@
 set -e
 echo "<== CHANGE APP ICON PROCESS START"
 
-APP_ICON_PATH=$1
-# APP_ICON_PATH='assets/logo.png'
+# APP_ICON_PATH=$1
+APP_ICON_PATH='assets/logo.png'
 ls
 echo "logoPath ==> $APP_ICON_PATH"
 
